@@ -10,8 +10,8 @@ body {
 
 
 .title {
-    color: crimson;
-    background-color:thistle;
+    color: #8b8884;
+    background-color: #dbdbdb;
     padding: 5px;
     display: inline-block;
     border-radius: 5px;
