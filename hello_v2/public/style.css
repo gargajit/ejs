@@ -11,16 +11,13 @@ body {
 
 .title {
     color: #8b8884;
-    background-color: #dbdbdb;
     padding: 5px;
     display: inline-block;
     border-radius: 5px;
-    animation: crimson-back 1s 400ms;
+    animation: crimson-back 1s 300ms;
 }
 @keyframes crimson-back {
-    0% { color: #8b8884; }
     50% { color: crimson; }
-    100% { color: #8b8884; }
 }
 
 .title:hover {
