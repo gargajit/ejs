@@ -19,9 +19,24 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
 });
 
+
 app.post("/home", (req, res) => {
+    const date = new Date();
+    const today = date.getDay();
+
+    let type = "a weekday";
+    let adv = "it's time to work hard.";
+
+    if (today === 0 || today === 6) {
+        type = "the weekend";
+        adv = "it's time to have fun.";
+    }
     res.render("home.ejs", 
-        { name: req.body["name"] }
+        { 
+            name: req.body["name"],
+            dayType: type,
+            advice: adv,
+        }
     );
 });
 
