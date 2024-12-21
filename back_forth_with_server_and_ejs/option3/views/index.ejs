@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Name Letters</title>
+</head>
+
+<body>
+   <% if(locals.nameLength) { %>
+    <h1><%= customHeader %></h1>
+   <% } else { %>
+    <h1>Enter Your Name Below 👇</h1>
+   <% } %>
+  <form action="/" method="POST">
+    <div class="form-group">
+      <div class="input-container">
+        <input class="name-input" type="text" name="fName" placeholder=" ">
+        <label for="fName">First name</label>
+      </div>
+      <div class="input-container">
+        <input class="name-input" type="text" name="lName" placeholder=" ">
+        <label for="lName">Last name</label>
+      </div>
+      <input class="btn" type="submit" value="OK">
+    </div>
+  </form>
+</body>
+
+</html>
