@@ -7,13 +7,13 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index2.ejs");
+  res.render("index.ejs");
 });
 
 app.post("/", (req, res) => {
   var nameLength = req.body["fName"].length + req.body["lName"].length;
   
-  res.render("index2.ejs", 
+  res.render("index.ejs", 
     { length: nameLength }
   );
 });
